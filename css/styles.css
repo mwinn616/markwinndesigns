@@ -1,0 +1,656 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #4891ff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Montserrat", sans-serif;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+ul {
+    list-style: none;;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ img {
+    max-width: 100%;
+}
+
+/* Navbar */
+.navbar {
+    background: #fff;
+    padding: 20px;  
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .main-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .main-menu ul li a {
+    padding: 10px 20px;
+    display: block;
+    font-weight: 600;
+    transition: 05.s;
+}
+
+.navbar .main-menu ul li a:hover {
+    color: var(--primary-color);
+}
+
+.navbar ul li:last-child a {
+    margin-left: 10px;
+}
+
+/* Hero Section */
+.hero {
+    margin-bottom: 50px
+}
+
+.hero .container {
+     background: url(../images/magnus-andersson-KAzgxInZXMo-unsplash.jpg) no-repeat;
+    background-size: contain;
+    background-position: center right;
+    display: flex;
+    height: 550px;
+}
+
+.hero .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    width: 60%;
+    gap: 20px;
+}
+
+.hero .hero-text {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.hero .hero-image img {
+    width: 100%;
+    max-height: 60vh;
+    object-fit: cover;
+}
+
+.hero .hero-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+/* Attributes Section */
+
+.attributes {
+    padding: 10px 0 40px;
+}
+
+.attributes .attribute-list {
+    display: flex;
+    gap: 16px;
+}
+
+.attributes .attribute-list .attribute-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.attributes .attribute-list .attribute-title img {
+    position: absolute;
+    top: -32px;
+    left: 0px;
+}
+
+/* Services Section */
+
+.services .services-list {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.title {
+    display: flex;
+    gap: 8px;
+}
+
+/* Featured Services Section 1 */
+
+.featured-service-item {
+    margin: 80px 0px;
+}
+
+.featured-service-item .content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.featured-service-item .content .content-text {
+  width: 50%;
+}
+
+.featured-service-item .content li {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.featured-service-item .image {
+    width: 50%;
+}
+
+/* Featured Services Section 2 */
+
+.featured-service-item-2 {
+    margin: 80px 0;
+}
+
+.featured-service-item-2 .content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.featured-service-item-2 .content .content-text {
+  width: 50%;
+}
+
+.featured-service-item-2 .content li {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.featured-service-item-2 .image {
+    width: 50%;
+}
+
+/* Testimonials Section */
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonials .testimonials-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.testimonials .card p:nth-child(2) {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+/* Pricing Section */
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 50px;;
+}
+
+.pricing .pricing-card-subheading {
+    margin-bottom: 30px;
+}
+
+.pricing .pricing-card-price {
+    margin-bottom: 30px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.pricing ul {
+    margin: 30px 0;
+}
+
+.pricing ul li {
+    margin-bottom: 20px;
+}
+
+.pricing ul li img {
+    margin-right: 8px;
+}
+
+.pricing .pricing-footer {
+    margin: 30px 0;
+}
+
+
+/* FAQs Section */
+
+.faq {
+   padding: 40px 0;
+}
+
+.faq .faq-group {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.faq .faq-group .faq-group-header {
+    padding: 20px 0;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.faq .faq-group .faq-group-header h4 {
+    font-weight: 600;
+    width: 95%;
+}
+
+.faq .faq-group .faq-group-header i {
+    position:absolute;
+    right: 0;
+    top: 35px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.faq .faq-group .faq-group-body {
+    display: none;
+}
+
+.faq .faq-group .faq-group-body.open {
+    display: block;
+}
+
+
+/* Contact Section */
+
+.contact {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact button {
+    width: fit-content;
+    margin: 20px auto;
+    
+}
+
+/* Footer */
+
+.footer .logo {
+    width: 120px;
+    height: 120px;
+}
+
+.footer .brand .social-links {
+    padding-left: 20px;
+}
+
+
+.footer .footer-grid .links ul li   {
+    margin: 10px 0;
+}
+
+.footer .footer-grid .contact-info ul li   {
+    margin: 10px 0;
+}
+
+.footer .footer-grid .links ul li a  {
+    color: #fff;
+}
+
+.footer .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.footer .line {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+
+/* Utility Classes */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px
+}
+
+/* Card */
+.card {
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 13px 20px;
+    background-color: var(--light-color);
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.btn-dark {
+    background-color: var(--dark-color);
+    color: #fff;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+/* Text Classes */
+.text-xxl {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 40px 0 20px
+}
+
+.text-xl {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 40px 0 20px
+}
+
+.text-lg {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 30px 0 20px
+}
+
+.text-md {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 20px 0 10px
+}
+
+.text-sm {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 10px 0 5px
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Background */
+.bg-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.bg-light {
+    background-color: var(--light-color);
+    color: #333;
+}
+
+.bg-dark {
+    background-color: var(--dark-color);
+    color: #fff;
+}
+
+.bg-black {
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* Hamburger Button */
+.hamburger-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.hamburger-button .hamburger-line {
+    width: 30px;
+    height: 3px;
+    background: #333;
+    margin: 6px 0;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 250px;
+    height: 100%;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.mobile-menu ul {
+    margin: 100px auto;
+    padding: 0px 40px
+}
+
+.mobile-menu ul li {
+    margin: 10px 0;
+}
+
+
+.mobile-menu ul li a {
+   font-size: 20px;
+transition: 0.3s;
+}
+
+
+/* Media Queries */
+@media (max-width: 960px) {
+    .text-xxl {
+        font-size: 2.5rem;
+    }
+
+}
+
+
+
+@media (max-width: 670px) {
+    
+    /* Navbar */
+    .navbar .main-menu {
+        display: none;
+    }
+
+    .navbar .hamburger-button {
+        display: block;
+    }
+
+     /* Hero */
+
+    .hero .container {
+        background: url(../images/magnus-andersson-KAzgxInZXMo-unsplash.jpg) no-repeat;
+        background-color: #00000023;
+        background-blend-mode: multiply;
+        background-size: cover;
+        height: 770px;
+    }
+
+    .hero .container .hero-content {
+        color: #fff;
+        width: 80%;
+    }
+
+.hero .hero-buttons {
+        display: block;
+        width: 80%;
+    }
+
+    .hero .hero-buttons .btn {
+        margin-bottom: 10px;
+        display: block;
+        width: 100%;
+    }
+
+     /* Attributes */
+
+     .attributes .attribute-list {
+        display: flex;
+        flex-wrap: wrap;
+     }
+
+     /*Featured Section 1*/
+
+
+.featured-service-item .content .content-text {
+    width: 100%;
+}
+
+.featured-service-item .image {
+    width: 100%;
+}
+
+.featured-service-item-2 .content {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.featured-service-item-2 .content .content-text {
+    width: 100%;
+}
+
+.featured-service-item-2 .image {
+    width: 100%;
+}
+
+.featured-service-item .content h2,
+.featured-service-item-2 .content h2 {
+    text-align: center;
+}
+
+
+
+.footer .footer-grid > div {
+    text-align: center;
+}
+
+.testimonials h2 {
+    max-width: 100%;
+    text-align: center;
+}
+
+.testimonials .testimonials-grid, .pricing .pricing-grid, .services .services-list, .footer .footer-grid {
+    grid-template-columns: 1fr;
+}
+
+/* Text */
+
+.text-xl {
+    font-size: 1.9rem;
+}
+
+.text-lg {
+    font-size: 1.5rem;
+}
+
+.text-md {
+    font-size: 1.1rem;
+}
+
+
+
+
+
+}
+
+
+
+
+
+@media (max-width: 500px) {
+.text-xxl {
+    font-size: 2rem;
+}
+
+
+}
+
