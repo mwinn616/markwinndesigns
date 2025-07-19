@@ -1,0 +1,10 @@
+
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text { font: bold 24px sans-serif; fill: #1f3a56; }
+  </style>
+  <g>
+    <polygon points="30,250 90,50 150,180 210,50 270,250 210,250 150,120 90,250" fill="#2ba6a0"/>
+    <text x="50" y="290" class="text">MARKWINNDESIGNS</text>
+  </g>
+</svg>

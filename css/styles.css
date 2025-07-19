@@ -46,14 +46,12 @@ a {
 
 /* Navbar */
 .navbar {
-    background: #fff;
+    background: #ffffff;
     padding: 20px;  
 }
 
 .logo img {
-    width: 50px;
-    height: 50px;
-    border-radius: 6px;
+    height: 80px;
 }
 
 .navbar .container {
@@ -88,22 +86,27 @@ a {
 }
 
 .hero .container {
-     background: url(../images/magnus-andersson-KAzgxInZXMo-unsplash.jpg) no-repeat;
+    background: url(../images/magnus-andersson-KAzgxInZXMo-unsplash.jpg) no-repeat;
     background-size: contain;
     background-position: center right;
     display: flex;
     height: 550px;
 }
 
+.hero .hero-content .mini-heading {
+    margin-top: 80px;
+}
+
 .hero .hero-content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
     padding-right: 20px;
     padding-bottom: 20px;
     width: 60%;
-    gap: 20px;
+}
+
+.hero .hero-content .hero-heading {
+    margin-top: 5px;
 }
 
 .hero .hero-text {
@@ -544,6 +547,7 @@ transition: 0.3s;
     .navbar .hamburger-button {
         display: block;
     }
+
 
      /* Hero */
 
