@@ -82,27 +82,23 @@ a {
 
 /* Hero Section */
 .hero {
-    margin-bottom: 50px
-}
-
-.hero .container {
-    background: url(../images/magnus-andersson-KAzgxInZXMo-unsplash.jpg) no-repeat;
-    background-size: contain;
-    background-position: center right;
+    margin-bottom: 50px;
+    background: url(../images/andrew-kliatskyi-MaVm_A0xhKk-unsplash.jpg) no-repeat;
+    height: 600px;
     display: flex;
-    height: 550px;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
-.hero .hero-content .mini-heading {
-    margin-top: 80px;
-}
 
 .hero .hero-content {
     display: flex;
     flex-direction: column;
     padding-right: 20px;
     padding-bottom: 20px;
-    width: 60%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .hero .hero-content .hero-heading {
@@ -110,19 +106,13 @@ a {
 }
 
 .hero .hero-text {
-    width: 80%;
     margin-bottom: 20px;
 }
 
-.hero .hero-image img {
-    width: 100%;
-    max-height: 60vh;
-    object-fit: cover;
-}
 
-.hero .hero-buttons {
-    display: flex;
-    gap: 16px;
+.btn-fit {
+    width: fit-content;
+    margin: 0 auto;
 }
 
 /* Attributes Section */
@@ -132,22 +122,15 @@ a {
 }
 
 .attributes .attribute-list {
+    margin-top: 60px;
     display: flex;
     gap: 16px;
 }
 
-.attributes .attribute-list .attribute-title {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    position: relative;
+.attributes .attribute-list .attribute-list-item {
+    width: 100%;
 }
 
-.attributes .attribute-list .attribute-title img {
-    position: absolute;
-    top: -32px;
-    left: 0px;
-}
 
 /* Services Section */
 
@@ -381,6 +364,16 @@ a {
     padding: 20px;
 }
 
+.icon-container {
+    background-color: var(--primary-color);
+    width: 5.5rem;
+    height: 5.5rem;
+    margin: -2.75rem auto 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;}
+
 
 /* Buttons */
 .btn {
@@ -420,39 +413,58 @@ a {
     font-size: 3rem;
     line-height: 1.2;
     font-weight: 600;
-    margin: 40px 0 20px
+    margin: 10px 0 20px;
 }
 
 .text-xl {
     font-size: 2.2rem;
     line-height: 1.4;
     font-weight: normal;
-    margin: 40px 0 20px
+    margin: 10px 0 20px;
 }
 
 .text-lg {
     font-size: 1.8rem;
     line-height: 1.4;
     font-weight: normal;
-    margin: 30px 0 20px
+    margin: 10px 0 20px;
 }
 
 .text-md {
     font-size: 1.2rem;
     line-height: 1.4;
     font-weight: normal;
-    margin: 20px 0 10px
+    margin: 20px 0 10px;
 }
 
 .text-sm {
     font-size: 0.9rem;
     line-height: 1.4;
     font-weight: normal;
-    margin: 10px 0 5px
+    margin: 10px 0 5px;
+}
+
+.mini-heading {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: .9rem;
+    color: var(--primary-color);
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .text-center {
     text-align: center;
+}
+
+.fa-desktop, .fa-cloud, .fa-pencil {
+    color: white;
+}
+
+.fa-circle-check {
+    color: var(--primary-color);
 }
 
 /* Background */
@@ -552,11 +564,7 @@ transition: 0.3s;
      /* Hero */
 
     .hero .container {
-        background: url(../images/magnus-andersson-KAzgxInZXMo-unsplash.jpg) no-repeat;
-        background-color: #00000023;
-        background-blend-mode: multiply;
-        background-size: cover;
-        height: 770px;
+        background: url(../images/andrew-kliatskyi-MaVm_A0xhKk-unsplash.jpg) no-repeat;
     }
 
     .hero .container .hero-content {
