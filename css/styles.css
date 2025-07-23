@@ -50,6 +50,7 @@ a {
     width: 100%;
     position: fixed;
     overflow: hidden;
+    z-index: 10000;
 }
 
 
