@@ -52,7 +52,7 @@ a {
 
 
 .logo img {
-    height: 130px;
+    height: 120px;
 }
 
 .navbar .container {
@@ -86,7 +86,7 @@ a {
 .hero {
     margin-bottom: 50px;
     background: url(../images/andrew-kliatskyi-MaVm_A0xhKk-unsplash.jpg) no-repeat;
-    height: 600px;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -644,6 +644,16 @@ transition: 0.3s;
     .hero .container {
         background: url(../images/andrew-kliatskyi-MaVm_A0xhKk-unsplash.jpg) no-repeat;
     }
+
+    .hero {
+    margin-bottom: 50px;
+    background: url(../images/andrew-kliatskyi-MaVm_A0xhKk-unsplash.jpg) no-repeat;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+}
 
     .hero .container .hero-content {
         color: #fff;
