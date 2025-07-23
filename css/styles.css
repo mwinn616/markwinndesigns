@@ -367,8 +367,9 @@ margin-top: 80px;
     height: 120px;
 }
 
-.footer .brand .social-links {
-    padding-left: 20px;
+.footer .logo .img {
+    width: 120px;
+    height: 120px;
 }
 
 
@@ -391,11 +392,18 @@ margin-top: 80px;
     padding: 20px;
 }
 
-.footer .line {
+.line {
     width: 100%;
     height: 1px;
     background-color: #ccc;
     margin: 20px 0;
+}
+
+.line-mini {
+    width: 75%;
+    height: 1px;
+    background-color: var(--primary-color);
+    margin: 15px 0;
 }
 
 
@@ -672,11 +680,6 @@ transition: 0.3s;
     width: 100%;
 }
 
-
-
-.footer .footer-grid > div {
-    text-align: center;
-}
 
 .testimonials h2 {
     max-width: 100%;
