@@ -51,7 +51,9 @@ a {
 
 
 .logo img {
-    height: 120px;
+    height: 140px;
+    margin-top: -50px;
+    margin-bottom: -50px;
 }
 
 .navbar .container {
@@ -85,7 +87,7 @@ a {
 .hero {
     margin-bottom: 50px;
     background: url(../images/andrew-kliatskyi-MaVm_A0xhKk-unsplash.jpg) no-repeat;
-    height: 60vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -636,6 +638,8 @@ transition: 0.3s;
 
     .navbar .hamburger-button {
         display: block;
+        background: var(--primary-color);
+        border-radius: 15px;
     }
 
 
@@ -648,10 +652,10 @@ transition: 0.3s;
     .hero {
     margin-bottom: 50px;
     background: url(../images/andrew-kliatskyi-MaVm_A0xhKk-unsplash.jpg) no-repeat;
-    height: 60vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     color: white;
 }
 
