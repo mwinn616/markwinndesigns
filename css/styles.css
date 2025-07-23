@@ -46,7 +46,6 @@ a {
 
 /* Navbar */
 .navbar {
-    background: #000000;
     padding: 20px;  
 }
 
@@ -363,6 +362,7 @@ margin-top: 80px;
 
 /* Footer */
 
+
 .footer .footer-logo {
     margin-bottom: -25px;
     margin-left: -25px;
@@ -561,7 +561,7 @@ margin-top: 80px;
 }
 
 .bg-black {
-    background-color: #000;
+    background-color: #0A0908;
     color: #fff;
 }
 
