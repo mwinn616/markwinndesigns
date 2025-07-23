@@ -46,7 +46,10 @@ a {
 
 /* Navbar */
 .navbar {
-    padding: 20px;  
+    padding: 20px; 
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
 }
 
 
