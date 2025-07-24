@@ -91,7 +91,7 @@ a {
 .hero {
     margin-bottom: 50px;
     background: url(../images/andrew-kliatskyi-MaVm_A0xhKk-unsplash.jpg) no-repeat;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -675,7 +675,7 @@ transition: 0.3s;
     .hero {
     margin-bottom: 50px;
     background: url(../images/andrew-kliatskyi-MaVm_A0xhKk-unsplash.jpg) no-repeat;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
