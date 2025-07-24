@@ -751,7 +751,7 @@ transition: 0.3s;
 }
 
 .team .content-text {
-    width: 100%
+    width: 100%;
 }
 
 
@@ -806,26 +806,8 @@ transition: 0.3s;
 }
 
 .portrait-container {
-
     width: 100%;
 }
-
-.name-tag {
-    height: 3em;
-    width: 11em;
-    background-color: var(--primary-color);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    text-align: center;
-    position: absolute;
-    left: 30%;
-    bottom: 5%;
-
-}
-
 
 }
 
