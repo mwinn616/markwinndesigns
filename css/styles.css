@@ -63,12 +63,19 @@ a {
 .navbar .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    max-width: 90rem;
+    width: 100%;
+}
+
+.navbar .main-menu  {
+    display: flex;
+    justify-content: space-between;
 }
 
 .navbar .main-menu ul {
     display: flex;
     list-style: none;
+    text-align: center;
 }
 
 .navbar .main-menu ul li a {
@@ -649,6 +656,25 @@ transition: 0.3s;
 
 }
 
+
+
+
+
+@media (max-width: 1020px) {
+    
+    /* Navbar */
+    .navbar .main-menu,
+    .navbar .nav-cta-button {
+        display: none;
+        
+    }
+
+    .navbar .hamburger-button {
+        display: block;
+        background: var(--primary-color);
+        border-radius: 15px;
+    }
+}
 
 
 @media (max-width: 670px) {
