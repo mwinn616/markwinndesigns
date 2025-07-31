@@ -144,6 +144,12 @@ a {
     width: 100%;
 }
 
+.attributes .fa-desktop,
+.attributes .fa-cloud,
+.attributes .fa-pencil {
+    color: #fff;
+}
+
 
 /* Featured Services Section 1 */
 
@@ -280,9 +286,16 @@ a {
     margin-top: 20px;
 }
 
-.title {
+.services .services-list .card{
     display: flex;
-    gap: 8px;
+    flex-direction: column;
+    padding: 20px 30px;
+}
+
+.services .title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 /* Testimonials Section */
@@ -338,6 +351,9 @@ margin-top: 80px;
 
 .pricing ul li {
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .pricing ul li img {
@@ -726,13 +742,10 @@ margin-top: 80px;
     text-align: center;
 }
 
-.fa-desktop, .fa-cloud, .fa-pencil {
-    color: white;
-}
 
-.fa-circle-check {
-    color: var(--primary-color);
-}
+
+
+
 
 /* Background */
 .bg-primary {
