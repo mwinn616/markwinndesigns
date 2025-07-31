@@ -48,7 +48,6 @@ a {
 .navbar {
     padding: 20px; 
     width: 100%;
-    position: fixed;
     overflow: hidden;
     z-index: 10000;
 }
@@ -401,11 +400,15 @@ margin-top: 80px;
 
 /* Footer */
 
+.footer {
+    border-radius: 10px 10px 0 0;
+}
+
 
 .footer .footer-logo {
     margin-bottom: -25px;
     margin-left: -25px;
-    margin-top: -20px;
+    margin-top: -15px;
 }
 
 .footer .footer-logo img {
@@ -456,6 +459,110 @@ margin-top: 80px;
     background-color: var(--primary-color);
     margin: 15px 0;
 }
+
+
+
+
+    /* Services Page */
+
+    /* Services Page Hero */
+
+    .hero-mini {
+        background: url(../images/andrew-kliatskyi-MaVm_A0xhKk-unsplash.jpg) no-repeat;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border-radius: 0px 0px 15px 15px;
+    }
+
+
+    /* Contact Page */
+
+    .contact-page {
+        padding: 50px 0;
+    }
+
+    .contact-page-section {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+
+    .contact-page-section .contact-page-details ul li   {
+    margin: 10px 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 12px;
+}
+
+ .contact-page .contact-page-section .contact-page-details {
+        width: 50%;
+    }
+
+    .map {
+        width: 50%;
+        border-radius: 15px;
+        overflow: hidden;
+        margin: 20px auto;
+    }
+
+    form {
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+ .contact-page .contact-form .form-group .form-item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        min-width: 49%;
+    }
+
+      .contact-page .contact-form .form-group .form-item label {
+        width: 100%;
+        font-weight: 600;
+        color: #333;
+        border-radius: 5px;
+    }
+
+    .contact-page .contact-form .form-group .form-item input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .contact-page .contact-form .form-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        flex-direction: row;
+        margin: 10px auto;
+        width: 100%;
+    }
+
+     .message  {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 125px;
+    }
+
+    .message textarea {
+        width: 100%;
+        height: 120px;
+    }
+
 
 
 /* Utility Classes */
@@ -655,6 +762,7 @@ margin-top: 80px;
 }
 
 
+
 /* Media Queries */
 @media (max-width: 960px) {
     .text-xxl {
@@ -677,7 +785,89 @@ margin-top: 80px;
         background: var(--primary-color);
         border-radius: 10px;
     }
+
+
+    /* Contact Page */
+
+    .contact-page-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+     .contact-page .contact-page-section .contact-page-details {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+     .contact-page .contact-page-section .contact-page-details p {
+        width: 70%
+    }
+
+    .map {
+        border-radius: 15px;
+        overflow: hidden;
+        margin: 20px auto;
+        width: 100%;
+    }
+
+ 
+
 }
+
+ .contact-page .contact-form .form-group .form-item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        min-width: 45%;
+    }
+
+      .contact-page .contact-form .form-group .form-item label {
+        width: 100%;
+        font-weight: 600;
+        color: #333;
+        border-radius: 5px;
+    }
+
+    .contact-page .contact-form .form-group .form-item input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .contact-page .contact-form .form-group {
+        display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+        gap: 20px;
+        flex-direction: row;
+        margin: 10px auto;
+        width: 100%;
+    }
+
+     .message  {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        width: 92%;
+        height: 125px;
+    }
+
+    .contact-page .contact-form a {
+        width: 92%;
+        margin: 20px auto;
+    }
+
+
+
 
 
 @media (max-width: 670px) {
@@ -784,6 +974,7 @@ margin-top: 80px;
     }
 
 
+
     /* Text */
 
     .text-xl {
@@ -806,7 +997,86 @@ margin-top: 80px;
     .footer .line-mini {
         width: 50%;
     }
+
+
+    /* Contact Page */
+
+    .contact-page-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+     .contact-page .contact-page-section .contact-page-details {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+     .contact-page .contact-page-section .contact-page-details p {
+        width: 70%
+    }
+
+    .map {
+        border-radius: 15px;
+        overflow: hidden;
+        margin: 20px auto;
+        width: 100%;
+    }
+
+ 
+
 }
+
+ .contact-page .contact-form .form-group .form-item {
+        display: block;
+        margin-bottom: 10px;
+        min-width: 100%;
+        width: 100%;
+       }
+
+      .contact-page .contact-form .form-group .form-item label {
+        width: 100%;
+        font-weight: 600;
+        color: #333;
+        border-radius: 5px;
+    }
+
+    .contact-page .contact-form .form-group .form-item input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .contact-page .contact-form .form-group {
+        display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+        gap: 20px;
+        flex-direction: row;
+        margin: 10px auto;
+        width: 100%;
+    }
+
+     .message  {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        width: 92%;
+        height: 125px;
+    }
+
+    .contact-page .contact-form a {
+        width: 92%;
+        margin: 20px auto;
+    }
 
 
 
